@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: traffic-generator
+  labels:
+    app: traffic-generator
+spec:
+  containers:
+  - name: traffic-generator
+    image: rish589/traffic-gener:1.0.0
+    args:
+      - '10.244.0.115/api'
+      - '0.5'
