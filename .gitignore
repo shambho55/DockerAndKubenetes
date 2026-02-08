@@ -7,3 +7,4 @@ key-value-app/backend/node_modules
 notes-rest-api/notes-backend/node_modules
 notes-rest-api/notebooks-backend/node_modules
 color-api/node_modules
+services/google-extname.yaml
