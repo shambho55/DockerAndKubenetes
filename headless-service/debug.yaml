@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: curl
+  labels:
+    app: curl
+spec:
+  containers:
+    - name: curl
+      image: byrnedo/alpine-curl:latest
+      resources:
+        limits:
+          cpu: "500m"
+          memory: "128Mi"
+      command: ["/bin/sh","-c"]
+      args:
+        - |
+          while true; do
+            echo "Container is running : $(date)"
+            sleep 10
+          done
